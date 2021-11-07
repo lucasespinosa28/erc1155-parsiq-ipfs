@@ -4,7 +4,7 @@ its app use Parsiq to generate random NFT using webhook
 # how to run the app
 1. copy the `contract/erc115.sol`` to [remix](https://remix.ethereum.org/),deploy into rinkeby network
 2. add the contract address and the Rinkeby network endpoint RPC in the config `src/config.js`
-3. in the script add apiKey and apiSecret from [fleek](https://fleek.co/)
+3. in the `/script/config.js` add apiKey and apiSecret from [fleek](https://fleek.co/)
 4. run the webhook,`npm run webhook`
 5. add new webhook transport with ngrok url,[parsiq transport](https://staging.parsiq.net/monitoring/transports)
 6. in the [parsiq events](https://staging.parsiq.net/monitoring/events) add the file `contract/abi.json`
